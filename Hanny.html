@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hanny.css">
+    <title>Hanny</title>
+</head>
+<body>
+    <div class="time">
+        <p class="validation">Check only a Box</p>
+        
+            <label for="time-breakfast">Breakfast</label>
+            <input type="checkbox" placeholder="What are we taking" id="time-breakfast">
+
+            <label for="time-lunch">Lunch</label>
+            <input type="checkbox" placeholder="What are we taking" id="time-lunch">
+
+            <label for="time-dinner">Dinner</label>
+            <input type="checkbox" placeholder="What are we taking" id="time-dinner">
+
+            <button onclick="Submit()">Submit</button>    
+    </div>
+
+
+
+    <div class="MenuOptions">
+        <div class="breakfast" id="breakfast">
+            <h3>Breakfast</h3>
+            <ol class="ol">
+                <li>Eggs Benedict(<b>$8.99</b>)</li>
+                <li>Avocado Toast(<b>$6.99</b>)</li>
+                <li>Yougurt Parfait(<b>$5.99</b>)</li>
+            </ol>
+
+            <div class="quantity">
+                
+                <input type="text" id="breakfast-ip" placeholder="What will eating?">
+                
+                
+                <input type="number" id="breakfast-quantity" placeholder="Quantity">
+                
+                <button onclick="morning()">Submit</button>
+            
+            </div>
+           <p id="breakfastTotal"></p>
+        </div>
+
+
+
+
+        <div class="lunch" id="lunch">
+            <h3>Lunch</h3>
+            <ol class="ol">
+                <li>Grilled Chicken Sandich(<b>$9.99</b>)</li>
+                <li>Caesar Salad(<b>$8.99</b>)</li>
+                <li>Turkey Wrap(<b>$7.99</b>)</li>
+            </ol>
+            <div class="quantity"> 
+            
+                <input type="text" id="lunch-ip" placeholder="What will eating?">
+                
+                
+                
+                <input type="number" id="lunch-quantity" placeholder="Quantity">
+                
+                <button onclick="afternoon()">Submit</button>
+                
+            
+            </div>
+            <p id="lunchTotal"></p>
+        </div>
+
+
+
+
+        <div class="dinner" id="dinner">
+             <h3>Dinner</h3>
+            <ol class="ol">
+                <li>Baked Salmon($<b>14.99</b>)</li>
+                <li>Steak($<b>19.99</b>)</li>
+                <li>Vegetarian Wrap($<b>12.99</b>)</li>
+            </ol>
+            
+            <div class="quantity"> 
+                
+                <input type="text" id="dinner-ip" placeholder="What will eating?">
+                
+                
+                
+                <input type="number" id="dinner-quantity" placeholder="Quantity">
+                
+                <button onclick="evening()">Submit</button>
+               
+            </div>
+            <p id="dinnerTotal"></p>
+        </div>
+    </div>
+
+
+    
+
+</body>
+<script src="Hanny.js"></script>
+</html>
